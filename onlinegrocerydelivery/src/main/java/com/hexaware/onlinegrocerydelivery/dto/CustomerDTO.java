@@ -2,11 +2,11 @@ package com.hexaware.onlinegrocerydelivery.dto;
 
 public class CustomerDTO {
 
-	private int customer_id;
-	private String customer_name;
+	private int customerId;
+	private String customerName;
 	private String email;
-	private String phone_number;
-	private String delivery_address;
+	private String phoneNumber;
+	private String deliveryAddress;
 	
 	
 	public CustomerDTO() {
@@ -14,34 +14,33 @@ public class CustomerDTO {
 	}
 
 
-	public CustomerDTO(int customer_id, String customer_name, String email, String phone_number,
-			String delivery_address) {
+	public CustomerDTO(int customerId, String customerName, String email, String phoneNumber, String deliveryAddress) {
 		super();
-		this.customer_id = customer_id;
-		this.customer_name = customer_name;
+		this.customerId = customerId;
+		this.customerName = customerName;
 		this.email = email;
-		this.phone_number = phone_number;
-		this.delivery_address = delivery_address;
+		this.phoneNumber = phoneNumber;
+		this.deliveryAddress = deliveryAddress;
 	}
 
 
-	public int getCustomer_id() {
-		return customer_id;
+	public int getCustomerId() {
+		return customerId;
 	}
 
 
-	public void setCustomer_id(int customer_id) {
-		this.customer_id = customer_id;
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
 	}
 
 
-	public String getCustomer_name() {
-		return customer_name;
+	public String getCustomerName() {
+		return customerName;
 	}
 
 
-	public void setCustomer_name(String customer_name) {
-		this.customer_name = customer_name;
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
 	}
 
 
@@ -55,31 +54,32 @@ public class CustomerDTO {
 	}
 
 
-	public String getPhone_number() {
-		return phone_number;
+	public String getPhoneNumber() {
+		return phoneNumber;
 	}
 
 
-	public void setPhone_number(String phone_number) {
-		this.phone_number = phone_number;
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 
 
-	public String getDelivery_address() {
-		return delivery_address;
+	public String getDeliveryAddress() {
+		return deliveryAddress;
 	}
 
 
-	public void setDelivery_address(String delivery_address) {
-		this.delivery_address = delivery_address;
+	public void setDeliveryAddress(String deliveryAddress) {
+		this.deliveryAddress = deliveryAddress;
 	}
 
 
 	@Override
 	public String toString() {
-		return "CustomerDTO [customer_id=" + customer_id + ", customer_name=" + customer_name + ", email=" + email
-				+ ", phone_number=" + phone_number + ", delivery_address=" + delivery_address + "]";
+		return "CustomerDTO [customerId=" + customerId + ", customerName=" + customerName + ", email=" + email
+				+ ", phoneNumber=" + phoneNumber + ", deliveryAddress=" + deliveryAddress + "]";
 	}
+	
 	
 	
 	

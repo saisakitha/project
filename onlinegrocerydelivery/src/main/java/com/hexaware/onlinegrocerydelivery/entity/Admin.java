@@ -8,8 +8,8 @@ public class Admin {
 	
 	
 	@Id
-	private int admin_id;
-	private String username;
+	private int adminId;
+	private String userName;
 	private String password;
 	
 	
@@ -18,31 +18,31 @@ public class Admin {
 	}
 
 
-	public Admin(int admin_id, String username, String password) {
+	public Admin(int adminId, String userName, String password) {
 		super();
-		this.admin_id = admin_id;
-		this.username = username;
+		this.adminId = adminId;
+		this.userName = userName;
 		this.password = password;
 	}
 
 
-	public int getAdmin_id() {
-		return admin_id;
+	public int getAdminId() {
+		return adminId;
 	}
 
 
-	public void setAdmin_id(int admin_id) {
-		this.admin_id = admin_id;
+	public void setAdminId(int adminId) {
+		this.adminId = adminId;
 	}
 
 
-	public String getUsername() {
-		return username;
+	public String getUserName() {
+		return userName;
 	}
 
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 
@@ -58,7 +58,7 @@ public class Admin {
 
 	@Override
 	public String toString() {
-		return "Admin [admin_id=" + admin_id + ", username=" + username + ", password=" + password + "]";
+		return "Admin [adminId=" + adminId + ", userName=" + userName + ", password=" + password + "]";
 	}
 	
 	

@@ -1,8 +1,8 @@
 package com.hexaware.onlinegrocerydelivery.dto;
 
 public class ProductDTO {
-	private int product_id;
-	private String product_name;
+	private int productId;
+	private String productName;
 	private String category;
 	private String brand;
 	private float price;
@@ -14,10 +14,10 @@ public class ProductDTO {
 	}
 
 
-	public ProductDTO(int product_id, String product_name, String category, String brand, float price, int quantity) {
+	public ProductDTO(int productId, String productName, String category, String brand, float price, int quantity) {
 		super();
-		this.product_id = product_id;
-		this.product_name = product_name;
+		this.productId = productId;
+		this.productName = productName;
 		this.category = category;
 		this.brand = brand;
 		this.price = price;
@@ -25,23 +25,23 @@ public class ProductDTO {
 	}
 
 
-	public int getProduct_id() {
-		return product_id;
+	public int getProductId() {
+		return productId;
 	}
 
 
-	public void setProduct_id(int product_id) {
-		this.product_id = product_id;
+	public void setProductId(int productId) {
+		this.productId = productId;
 	}
 
 
-	public String getProduct_name() {
-		return product_name;
+	public String getProductName() {
+		return productName;
 	}
 
 
-	public void setProduct_name(String product_name) {
-		this.product_name = product_name;
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 
 
@@ -87,9 +87,11 @@ public class ProductDTO {
 
 	@Override
 	public String toString() {
-		return "ProductDTO [product_id=" + product_id + ", product_name=" + product_name + ", category=" + category
+		return "ProductDTO [productId=" + productId + ", productName=" + productName + ", category=" + category
 				+ ", brand=" + brand + ", price=" + price + ", quantity=" + quantity + "]";
 	}
+	
+	
 
 	
 

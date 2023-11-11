@@ -7,10 +7,10 @@ import jakarta.persistence.Id;
 public class Substitution {
 	
 	@Id
-	private int substitution_id;
-	private int order_id;
-	private int product_id;
-	private int substitute_product_id;
+	private int substitutionId;
+	private int orderId;
+	private int productId;
+	private int substituteProductId;
 	
 	
 	public Substitution() {
@@ -18,60 +18,64 @@ public class Substitution {
 	}
 
 
-	public Substitution(int substitution_id, int order_id, int product_id, int substitute_product_id) {
+	public Substitution(int substitutionId, int orderId, int productId, int substituteProductId) {
 		super();
-		this.substitution_id = substitution_id;
-		this.order_id = order_id;
-		this.product_id = product_id;
-		this.substitute_product_id = substitute_product_id;
+		this.substitutionId = substitutionId;
+		this.orderId = orderId;
+		this.productId = productId;
+		this.substituteProductId = substituteProductId;
 	}
 
 
-	public int getSubstitution_id() {
-		return substitution_id;
+	public int getSubstitutionId() {
+		return substitutionId;
 	}
 
 
-	public void setSubstitution_id(int substitution_id) {
-		this.substitution_id = substitution_id;
+	public void setSubstitutionId(int substitutionId) {
+		this.substitutionId = substitutionId;
 	}
 
 
-	public int getOrder_id() {
-		return order_id;
+	public int getOrderId() {
+		return orderId;
 	}
 
 
-	public void setOrder_id(int order_id) {
-		this.order_id = order_id;
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
 	}
 
 
-	public int getProduct_id() {
-		return product_id;
+	public int getProductId() {
+		return productId;
 	}
 
 
-	public void setProduct_id(int product_id) {
-		this.product_id = product_id;
+	public void setProductId(int productId) {
+		this.productId = productId;
 	}
 
 
-	public int getSubstitute_product_id() {
-		return substitute_product_id;
+	public int getSubstituteProductId() {
+		return substituteProductId;
 	}
 
 
-	public void setSubstitute_product_id(int substitute_product_id) {
-		this.substitute_product_id = substitute_product_id;
+	public void setSubstituteProductId(int substituteProductId) {
+		this.substituteProductId = substituteProductId;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Substitution [substitution_id=" + substitution_id + ", order_id=" + order_id + ", product_id="
-				+ product_id + ", substitute_product_id=" + substitute_product_id + "]";
+		return "Substitution [substitutionId=" + substitutionId + ", orderId=" + orderId + ", productId=" + productId
+				+ ", substituteProductId=" + substituteProductId + "]";
 	}
+	
+	
+
+
 	
 	
 	

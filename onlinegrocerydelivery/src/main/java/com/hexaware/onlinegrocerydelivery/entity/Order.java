@@ -10,12 +10,12 @@ import jakarta.persistence.Id;
 public class Order {
 	
 	@Id
-	private int order_id;
-	private int customer_id;
-	private LocalDate order_date;
-	private String delivery_address;
-	private String payment_method;
-	private double total_amount;
+	private int orderId;
+	private int customerId;
+	private LocalDate orderDate;
+	private String deliveryAddress;
+	private String paymentMethod;
+	private double totalAmount;
 	
 	
 	public Order() {
@@ -23,84 +23,89 @@ public class Order {
 	}
 
 
-	public Order(int order_id, int customer_id, LocalDate order_date, String delivery_address, String payment_method,
-			double total_amount) {
+	public Order(int orderId, int customerId, LocalDate orderDate, String deliveryAddress, String paymentMethod,
+			double totalAmount) {
 		super();
-		this.order_id = order_id;
-		this.customer_id = customer_id;
-		this.order_date = order_date;
-		this.delivery_address = delivery_address;
-		this.payment_method = payment_method;
-		this.total_amount = total_amount;
+		this.orderId = orderId;
+		this.customerId = customerId;
+		this.orderDate = orderDate;
+		this.deliveryAddress = deliveryAddress;
+		this.paymentMethod = paymentMethod;
+		this.totalAmount = totalAmount;
 	}
 
 
-	public int getOrder_id() {
-		return order_id;
+	public int getOrderId() {
+		return orderId;
 	}
 
 
-	public void setOrder_id(int order_id) {
-		this.order_id = order_id;
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
 	}
 
 
-	public int getCustomer_id() {
-		return customer_id;
+	public int getCustomerId() {
+		return customerId;
 	}
 
 
-	public void setCustomer_id(int customer_id) {
-		this.customer_id = customer_id;
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
 	}
 
 
-	public LocalDate getOrder_date() {
-		return order_date;
+	public LocalDate getOrderDate() {
+		return orderDate;
 	}
 
 
-	public void setOrder_date(LocalDate order_date) {
-		this.order_date = order_date;
+	public void setOrderDate(LocalDate orderDate) {
+		this.orderDate = orderDate;
 	}
 
 
-	public String getDelivery_address() {
-		return delivery_address;
+	public String getDeliveryAddress() {
+		return deliveryAddress;
 	}
 
 
-	public void setDelivery_address(String delivery_address) {
-		this.delivery_address = delivery_address;
+	public void setDeliveryAddress(String deliveryAddress) {
+		this.deliveryAddress = deliveryAddress;
 	}
 
 
-	public String getPayment_method() {
-		return payment_method;
+	public String getPaymentMethod() {
+		return paymentMethod;
 	}
 
 
-	public void setPayment_method(String payment_method) {
-		this.payment_method = payment_method;
+	public void setPaymentMethod(String paymentMethod) {
+		this.paymentMethod = paymentMethod;
 	}
 
 
-	public double getTotal_amount() {
-		return total_amount;
+	public double getTotalAmount() {
+		return totalAmount;
 	}
 
 
-	public void setTotal_amount(double total_amount) {
-		this.total_amount = total_amount;
+	public void setTotalAmount(double totalAmount) {
+		this.totalAmount = totalAmount;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Order [order_id=" + order_id + ", customer_id=" + customer_id + ", order_date=" + order_date
-				+ ", delivery_address=" + delivery_address + ", payment_method=" + payment_method + ", total_amount="
-				+ total_amount + "]";
+		return "Order [orderId=" + orderId + ", customerId=" + customerId + ", orderDate=" + orderDate
+				+ ", deliveryAddress=" + deliveryAddress + ", paymentMethod=" + paymentMethod + ", totalAmount="
+				+ totalAmount + "]";
 	}
 	
-
+	
+	
+	
+	
+	
+	
 }
