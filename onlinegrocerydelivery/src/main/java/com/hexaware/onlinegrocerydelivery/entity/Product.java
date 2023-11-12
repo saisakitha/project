@@ -7,8 +7,8 @@ import jakarta.persistence.Id;
 public class Product {
 	
 	@Id
-	private int product_id;
-	private String product_name;
+	private int productId;
+	private String productName;
 	private String category;
 	private String brand;
 	private float price;
@@ -18,30 +18,30 @@ public class Product {
 		super();
 	}
 
-	public Product(int product_id, String product_name, String category, String brand, float price, int quantity) {
+	public Product(int productId, String productName, String category, String brand, float price, int quantity) {
 		super();
-		this.product_id = product_id;
-		this.product_name = product_name;
+		this.productId = productId;
+		this.productName = productName;
 		this.category = category;
 		this.brand = brand;
 		this.price = price;
 		this.quantity = quantity;
 	}
 
-	public int getProduct_id() {
-		return product_id;
+	public int getProductId() {
+		return productId;
 	}
 
-	public void setProduct_id(int product_id) {
-		this.product_id = product_id;
+	public void setProductId(int productId) {
+		this.productId = productId;
 	}
 
-	public String getProduct_name() {
-		return product_name;
+	public String getProductName() {
+		return productName;
 	}
 
-	public void setProduct_name(String product_name) {
-		this.product_name = product_name;
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 
 	public String getCategory() {
@@ -78,10 +78,13 @@ public class Product {
 
 	@Override
 	public String toString() {
-		return "Product [product_id=" + product_id + ", product_name=" + product_name + ", category=" + category
+		return "Product [productId=" + productId + ", productName=" + productName + ", category=" + category
 				+ ", brand=" + brand + ", price=" + price + ", quantity=" + quantity + "]";
 	}
+
+	
 	
 	
 
+	
 }
