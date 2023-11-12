@@ -2,8 +2,10 @@ package com.hexaware.onlinegrocerydelivery.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="Admin")
 public class Admin {
 	
 	
@@ -60,7 +62,8 @@ public class Admin {
 	public String toString() {
 		return "Admin [adminId=" + adminId + ", userName=" + userName + ", password=" + password + "]";
 	}
-	
+
+
 	
 	
 	

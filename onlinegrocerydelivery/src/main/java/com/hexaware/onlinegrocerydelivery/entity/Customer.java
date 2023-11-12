@@ -2,8 +2,10 @@ package com.hexaware.onlinegrocerydelivery.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="Customer")
 public class Customer {
 	
 	
@@ -85,9 +87,8 @@ public class Customer {
 		return "Customer [customerId=" + customerId + ", customerName=" + customerName + ", email=" + email
 				+ ", phoneNumber=" + phoneNumber + ", deliveryAddress=" + deliveryAddress + "]";
 	}
+
+
 	
+
 }
-
-
-
-	

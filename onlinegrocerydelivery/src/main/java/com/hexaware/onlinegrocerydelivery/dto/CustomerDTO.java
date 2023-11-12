@@ -79,9 +79,8 @@ public class CustomerDTO {
 		return "CustomerDTO [customerId=" + customerId + ", customerName=" + customerName + ", email=" + email
 				+ ", phoneNumber=" + phoneNumber + ", deliveryAddress=" + deliveryAddress + "]";
 	}
-	
-	
-	
+
+
 	
 	
 }
